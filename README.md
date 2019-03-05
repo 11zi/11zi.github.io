@@ -13,7 +13,7 @@
 Markdown贼tm好使
 
 ```markdown
-↑高亮的代码
+这里是高亮的代码模块
 
 # 大标题
 ## 二级标题
@@ -27,7 +27,10 @@ Markdown贼tm好使
 
 **粗体** 和 _斜体_ 和 `代码`
 
-[链接\(主页\)](https://11zi.github.io) 和 ![image](https://11zi.github.io/icon.png)
+[link](https://11zi.github.io)
+
+![image](https://11zi.github.io/icon.png)
+
 ```
 
 在 [这里](https://guides.github.com/features/mastering-markdown/)阅读更多有关markdown的信息.
