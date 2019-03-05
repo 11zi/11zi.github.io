@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "如何使用git"
+---
+
+# 从这里开始
+
+* 初始化git  
+`git init`
+* 添加一个地址  
+`git remote add <local-name> <SSH-address>`
+* 添加到暂存区  
+`git add .`  
+`git add <file>`
+* 保存到本地  
+`git commit -m '<something to say about this commit>'`
+* 从远程拉取  
+`git pull <remote-name> <branch-name>`
+* 提交到远程  
+`git push <remote-name> <branch-name>`
+
+# 查看其它信息
+
+* 远程仓库  
+`git remote`
+* 查看修改  
+`git status`
+* 查看所在分支  
+`git branch`
+* 查看历史(图像)  
+`git log --graph --pretty --abbrev-commit`  
+`git log --graph --pretty=oneline --abbrev-commit`
+
+# 管理分支
+
+* 合并HEAD和某个分支  
+`git merge <branch-name> --no--ff`  
+'--no--ff' is used to add commit when merge
+* 删除分支  
+`git branch -d <branch-name>`  
+  强制  
+`git branch -D <branch-name>`  
+
+# 储藏(stash)
+
+* 添加储藏  
+`git stash`
+* 切换到分支  
+`git checkout -b <new-branch-name>`  
+  修改后  
+`git commit -m '<mark something>'`  
+  查看储藏仓  
+`git stash list`  
+  选择:  
+  * 弹出储藏  
+  `git stash apply`  
+    然后删除  
+  `git stash drop`
+  * 弹出并删除  
+  `git stash pop`
+
+# 版本标签
+
+* 给某个版本上标签  
+**注意** :  
+  * **commit-id can be omitted**  
+  * **-a and -m is a couple**
+  * *** ' -d ' *** 可以删除一个本地标签  
+ `git tag -a <tag-name> -m "<mark something>" <commit-id>`
+* 根据commit-id上标签  
+`git tag <tag-name> <commit-id>`
+* 查看标签  
+`git show <tag-name>`    
+`git tag`
+* 删除一个远程标签  
+`git push origin :refs/tags/<tagname>`
