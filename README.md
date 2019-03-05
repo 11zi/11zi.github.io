@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+## 使用GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/11zi/11zi.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+在[这里](https://github.com/11zi/11zi.github.io/edit/master/README.md) 维护与预览网站
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+每次提交的时候GitHub Pages都会用[Jekyll](https://jekyllrb.com/)重建站点.
+
+### Jekyll 主题
+
+使用了超级漂亮的 [Jekyll预设](https://github.com/11zi/11zi.github.io/settings). 这个配置文件被保存在Jekyll的 `_config.yml` 文件下.
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown贼tm好使
 
 ```markdown
-Syntax highlighted code block
+↑高亮的代码
 
-# Header 1
-## Header 2
-### Header 3
+# 大标题
+## 二级标题
+### 三级标题
 
-- Bulleted
-- List
+- 无序列表
+- 很强
 
-1. Numbered
-2. List
+1. 有序列表
+2. 贼方便
 
-**Bold** and _Italic_ and `Code` text
+**粗体** 和 _斜体_ 和 `代码`
 
-[Link](url) and ![Image](src)
+[链接(主页)](https://11zi.github.io) 和 ![image](https://11zi.github.io/icon.png)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+在 [这里](https://guides.github.com/features/mastering-markdown/)阅读更多有关markdown的信息.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/11zi/11zi.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
