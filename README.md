@@ -27,7 +27,7 @@ Markdown贼tm好使
 
 **粗体** 和 _斜体_ 和 `代码`
 
-[链接(主页)](https://11zi.github.io) 和 ![image](https://11zi.github.io/icon.png)
+[链接\(主页\)](https://11zi.github.io) 和 ![image](https://11zi.github.io/icon.png)
 ```
 
 在 [这里](https://guides.github.com/features/mastering-markdown/)阅读更多有关markdown的信息.
