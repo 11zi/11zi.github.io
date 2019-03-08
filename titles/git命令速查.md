@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "如何使用git"
+title:  "git命令速查"
+author: yaoz
 ---
 
-# 从这里开始
+# 开始使用
 
 * 初始化git  
 `git init`
