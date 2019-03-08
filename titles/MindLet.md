@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "古老的MindLet"
+author: yaoz
+---
+
 # **MindLet 项目策划**
 [点击传送门体验MindLet](../src/MindLet/MindLet.html)
 ---
@@ -5,6 +11,7 @@
 ## 项目由来
 用过很多思维导图软件, 但是没有软件渲染导图就没法编辑  
 markdown能轻松排版文档, 但是没有文档内部之间的跳转(需要手动写html)
+这个东西大概也算是markdown的扩展吧..
 
 ---
 
