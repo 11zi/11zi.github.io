@@ -14,7 +14,7 @@ title:  "如何使用git"
 `git add <file>`
 * 保存到本地  
 `git commit -m '<something to say about this commit>'`
-* 从远程拉取  
+* 从远程拉取(下载)  
 `git pull <remote-name> <branch-name>`
 * 提交到远程  
 `git push <remote-name> <branch-name>`
