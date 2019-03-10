@@ -2,7 +2,7 @@
 _注:11zi是yaoz的谐音_
 ---
 
-## [css(待编辑)(./titles/css.md)]_(2019-3-9 )_
+## [css(待编辑)](./titles/css.md)_(2019-3-9 )_
 
 ## [JS的特点](./titles/javascript.md)_(2019-3-9 )_
 
