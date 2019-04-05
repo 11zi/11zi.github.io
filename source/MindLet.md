@@ -70,7 +70,7 @@ markdown能轻松排版文档, 但是没有文档内部之间的跳转(需要手
 
 若节点名重复, 则其前向会同时连接到所有同名节点  
 最后, 以上文本将被解析为下图:  
-![image](pic/MindLet_mvc.jpg)
+![image](pic/MindLet-mvc.jpg)
 
 ### 视图
 
@@ -84,7 +84,7 @@ markdown能轻松排版文档, 但是没有文档内部之间的跳转(需要手
 
 下图是一个Single模式的视图格式  
 
-![image](pic/MindLet_single.jpg)  
+![image](pic/MindLet-single.jpg)  
 
 它由五个部分组成:
 
@@ -132,15 +132,15 @@ markdown能轻松排版文档, 但是没有文档内部之间的跳转(需要手
 
 * All-Mode-Without-Line  
 
-  ![image](pic/MindLet_All_Mode_Without_Line.jpg)  
+  ![image](pic/MindLet-All_Mode_Without_Line.jpg)  
 
 * All-Mode  
 
-  ![image](pic/MindLet_All_Mode.jpg)  
+  ![image](pic/MindLet-All_Mode.jpg)  
 
 * Single-Mode(单击节点A)  
 
-  ![image](pic/MindLet_Single_Mode.jpg)  
+  ![image](pic/MindLet-Single_Mode.jpg)  
 
 * Single-Mode-View(暂不支持)  
 
