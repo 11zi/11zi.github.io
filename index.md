@@ -2,7 +2,7 @@
 _注:11zi是yaoz的谐音_
 ---
 
-## [**_unity用户手册手动汉化(高质量-持续更新)_**](./source/unity-manual.md)_(2019-4-14 )_
+## [**unity用户手册手动汉化(高质量-持续更新)**](./source/unity-manual.md)_(2019-4-14 )_
 
 ## [低速入门unity](./source/unity.md)_(2019-4-5 )_
 
