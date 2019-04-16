@@ -6,7 +6,7 @@ author: yaoz(translated)
 
 # Unity Hub
 
-Unity Hub是一个将你管理, 查找, 下载unity的方式流水线化的应用.此外, 你可以手动将其他版本的unity添加到Hub  
+Unity Hub能够简化管理, 查找, 下载unity的流程.此外, 你可以手动将其他版本的unity添加到Hub  
 你可以使用Hub做到以下事情:  
 
 - 管理Unity用户与编辑器协议
