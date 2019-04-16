@@ -4,9 +4,9 @@ title:  "使用unity"
 author: yaoz(translated)  
 ---  
 
-[回到目录](../unity-manual.md)  
+[回到上一级](../unity-manual.md)  
 
-完整的介绍了unity
+完整的介绍了unity  
 
 - 起步  
   下载与安装unity, 并从第一个项目开始
@@ -27,4 +27,49 @@ author: yaoz(translated)
 - 升级指南  
   升级旧项目的重要笔记
 
-# 起步
+---
+
+# [起步](./Working_in_Unity/Getting_started.md)
+
+这个部分是你用unity起步的关键, 它解释了unity接口, 菜单项目, 使用资源, 创建场景, 发布项目  
+当你阅读完这个部分, 你将了解unity的工作模式, 如何高效使用它, 以及制作游戏的基本步骤  
+
+## 安装选项
+
+你可以通过以下方式安装unity  
+
+- Hub提供了控制unity版本, 协议, 用户, 工程的功能, [安装Unity Hub](https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html)
+- 你可以使用下载器下载unity, 如果你之后决定使用Hub, 你可以将这个版本添加到Hub里, [使用下载器安装unity](https://docs.unity3d.com/Manual/InstallingUnity.html)
+- unity下载器支持离线部署, 你可以下载并离线安装unity, [安装程序](https://docs.unity3d.com/Manual/DeployingUnityOffline.html)
+
+---
+
+# 资源工作流
+
+---
+
+# 主窗口
+
+---
+
+# 创建游戏
+
+---
+
+# unity功能
+
+---
+
+# 进一步开发
+
+---
+
+# 进一步了解unity
+
+---
+
+# 协议-激活
+
+---
+
+# 升级指南

@@ -11,6 +11,8 @@ author: yaoz(translated)
 unity用户手册能帮助你学习如何使用unity以及它的关联服务.你可以从头读到尾, 或者当做参考书来用.  
 如果这是你第一次使用unity, 看一看这两个介绍文档:[Working with Unity](https://docs.unity3d.com/Manual/UnityOverview.html)[(即本文档章节1-使用unity)](./Working_in_Unity.md) / [Unity Tutorials(unity入门教程)](https://unity3d.com/learn/tutorials)  
 
+***
+
 # 目录
 
 ## [使用unity](./unity-manual/Working_in_Unity.md)
@@ -81,6 +83,8 @@ unity编辑器的导航系统, 比如AI或寻路
 
 ## [实践指导](./unity-manual/Best_pratice_guides.md)
 
+***
+
 # 包文档
 
 ## 离线文档
@@ -139,6 +143,7 @@ unity编辑器的导航系统, 比如AI或寻路
 [矢量图形](https://docs.unity3d.com/Packages/com.unity.vectorgraphics@latest/index.html?preview=1)  
 [视觉效果编辑工具](https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@latest/index.html?preview=1)  
 
+***
 
 # 更多的信息来源
 - [unity问答](https://answers.unity3d.com/?_ga=2.27011261.1265249052.1555124184-1683847273.1544506639)和[Unity论坛](https://forum.unity3d.com/?_ga=2.27011261.1265249052.1555124184-1683847273.1544506639), 你能在这里提问与找寻答案
