@@ -29,7 +29,7 @@ author: yaoz(translated)
 
 ---
 
-# [起步](./Working_in_Unity/Getting_started.md)
+# [起步](./Working_in_Unity/Getting_Started.md)
 
 这个部分是你用unity起步的关键, 它解释了unity接口, 菜单项目, 使用资源, 创建场景, 发布项目  
 当你阅读完这个部分, 你将了解unity的工作模式, 如何高效使用它, 以及制作游戏的基本步骤  
