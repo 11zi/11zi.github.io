@@ -6,7 +6,7 @@ author: yaoz
 
 # 其他
 
-## [unity用户手册手动汉化(已弃坑)](unity-manual.md)_(2019-4-14 )_
+## [unity用户手册手动汉化(已弃坑)](./gloves/unity-manual.md)_(2019-4-14 )_
 
 目前只汉化了第一章第一节, 建议查看[unity中文圣典](http://www.ceeger.com/Manual)或[已经翻译好的用户手册](https://nuysoft.gitbooks.io/unity-manual/content/Manual/StandardShaderMaterialCharts.html)
 
