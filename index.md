@@ -2,18 +2,10 @@
 _注:11zi是yaoz的谐音_
 ---
 
-## [unity用户手册手动汉化(已弃坑)](./source/unity-manual.md)_(2019-4-14 )_
-
-## [低速入门unity](./source/unity.md)_(2019-4-5 )_
-
-## [色彩搭配理论(待修复)](./source/color.md)_(2019-3-11 )_
-
-## [在学习css之前](./source/css.md)_(2019-3-11 )_
-
-## [JS的特点](./source/javascript.md)_(2019-3-9 )_
-
-## [关于HTML(入门)](./source/html.md)_(2019-3-9 )_
+## [常见物体固有色](./source/intrinsic_color.md)_(2019-4-17 )_
 
 ## [MindLet思维导图(已弃坑)](./source/mindlet.md)_(2019-3-8 )_
 
 ## [git命令速查](./source/git.md)_(2019-3-8 )_
+
+## [坑与鸽](./source/glove/stand_pit_up.md)_(2019-4-17 )_
