@@ -28,73 +28,73 @@ unity用户手册能帮助你学习如何使用unity以及它的关联服务.你
 
 # 目录
 
-## [使用unity](./unity-manual/Working_in_Unity.md)
+## [使用unity(进行中)](./unity-manual/Working_in_Unity.md)
 
 对unity编辑器的详细介绍  
 
-## [导入](./unity-manual/Importing.md)
+## [导入(未翻译)](./unity-manual/Importing.md)
 
-## [2D](./unity-manual/2D.md)
+## [2D(未翻译)](./unity-manual/2D.md)
 
 所有2D特性, 包括游戏, 精灵, 物理  
 
-## [图形](./unity-manual/Graphics.md)
+## [图形(未完成)](./unity-manual/Graphics.md)
 
 视觉方面, 包括摄像机与光照  
 
-## [物理](./unity-manual/Physics.md)
+## [物理(未翻译)](./unity-manual/Physics.md)
 
 模拟3D下的运动, 质量, 重力和碰撞  
 
-## [脚本](./unity-manual/Scripting.md)
+## [脚本(未翻译)](./unity-manual/Scripting.md)
 
 用代码设计游戏
 
-## [多人与网络](./unity-manual/Multiplayer_and_NetWorking.md)
+## [多人与网络(未翻译)](./unity-manual/Multiplayer_and_NetWorking.md)
 
 如何实现多人联机与联网  
 
-## [音频](./unity-manual/Audio.md)
+## [音频(未翻译)](./unity-manual/Audio.md)
 
 包括音频剪辑, 声源, 听众(listeners), 素材导入以及声音设置  
 
-## [动画](./unity-manual/Animation.md)
+## [动画(未翻译)](./unity-manual/Animation.md)
 
 unity编辑器里的动画  
 
-## [时间线](./unity-manual/Timeline.md)
+## [时间线(未翻译)](./unity-manual/Timeline.md)
 
 过场动画(Cinematics), 场景切换, 游戏流程(game-play sequences)  
 
-## [UI](./unity-manual/UI.md)
+## [UI(未翻译)](./unity-manual/UI.md)
 
 unity编辑器的UI系统  
 
-## [导航与寻路](./unity-manual/Navigation_and_Pathfinding.md)
+## [导航与寻路(未翻译)](./unity-manual/Navigation_and_Pathfinding.md)
 
 unity编辑器的导航系统, 比如AI或寻路  
 
-## [unity服务](./unity-manual/Unity_Services.md)
+## [unity服务(未翻译)](./unity-manual/Unity_Services.md)
 
-## [XR](./unity-manual/XR.md)
+## [XR(未翻译)](./unity-manual/XR.md)
 
-## [开源项目(为unity做贡献)](./unity-manual/Open-source_repositories.md)
+## [开源项目(为unity做贡献)(未翻译)](./unity-manual/Open-source_repositories.md)
 
 对想要修改引擎的开发者的建议  
 
-## [发布到素材商店](./unity-manual/Assert_Store_Publishing.md)
+## [发布到素材商店(未翻译)](./unity-manual/Assert_Store_Publishing.md)
 
-## [特殊平台](./unity-manual/Platform-specfic.md)
+## [特殊平台(未翻译)](./unity-manual/Platform-specfic.md)
 
 给既不是桌面环境也不是web平台项目的信息  
 
-## [试验中的特性](./unity-manual/Experimental.md)
+## [试验中的特性(未翻译)](./unity-manual/Experimental.md)
 
-## [维护旧项目(Legacy topics)](./unity-manual/Legacy_Topics.md)
+## [维护旧项目(Legacy topics)(未翻译)](./unity-manual/Legacy_Topics.md)
 
 如果你要维护旧项目会很有用  
 
-## [实践指导](./unity-manual/Best_pratice_guides.md)
+## [实践指导(未翻译)](./unity-manual/Best_pratice_guides.md)
 
 ***
 
