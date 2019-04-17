@@ -8,4 +8,4 @@ _注:11zi是yaoz的谐音_
 
 ## [git命令速查](./source/git.md)_(2019-3-8 )_
 
-## [坑与鸽](./source/glove/stand_pit_up.md)_(2019-4-17 )_
+## [坑与鸽](./source/gloves/stand_pit_up.md)_(2019-4-17 )_
