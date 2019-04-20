@@ -1,0 +1,231 @@
+<h1 id="mindlet-项目策划"><strong>MindLet 项目策划</strong></h1>
+<h2 id="web项目"><code>web项目</code></h2>
+<h2 id="项目由来">项目由来</h2>
+<p>用过很多思维导图软件, 但是没有软件渲染导图就没法编辑 markdown能轻松排版文档, 但是没有文档内部之间的跳转(需要手动写html)</p>
+<hr />
+<h2 id="功能">功能</h2>
+<h3 id="编辑">编辑:</h3>
+<p>清晰的标识出节点及其联结, 联结说明</p>
+<h3 id="使用">使用:</h3>
+<p>在没有程序渲染思维导图时, 仅查看文本文件也可以纵览整个思维导图, 从而修改重要的地方</p>
+<h3 id="特点">特点:</h3>
+<p>无需用户标记节点位置, 渲染时自动判断<br />
+语言特性, 有自己的语法</p>
+<hr />
+<h2 id="缺陷">缺陷</h2>
+<ul>
+<li>编辑不便</li>
+<li>相同节点与相同联结</li>
+<li>有向有环图</li>
+</ul>
+<hr />
+<h2 id="可能加入的特性">可能加入的特性</h2>
+<p>图片节点(但是对于文本操作可读性很差)<br />
+坐标控制(渲染需要判断是否连通图)<br />
+标签(在过于复杂, 可读性差的情况下)<br />
+多节点到多节点的拓扑(多个节点’同时’连到一个节点上, 可读性更差了)</p>
+<hr />
+<h2 id="如何使用项目">如何使用项目</h2>
+<p>语法示例:</p>
+<blockquote>
+<p># MVC架构<br />
+一种web应用框架</p>
+<p># 模型</p>
+<p>[控制器]返回响应/模型</p>
+<p># 视图</p>
+<p>[控制器]提交动作</p>
+<p># 控制器</p>
+<p>[模型]提交查询<br />
+<a href="#视图">视图</a>返回数据并由View渲染</p>
+</blockquote>
+<ul>
+<li>以#开头的行会被解析为一个节点<br />
+</li>
+<li>若图存在环路, 解析时会暂时忽视一些联结</li>
+<li>[]中表示联结到的节点, 之后是对联结的说明</li>
+</ul>
+<p>若节点名重复, 则其前向会同时连接到所有同名节点<br />
+最后, 以上文本将被解析为下图:<br />
+<img src="1/mvc.jpg" alt="image" /></p>
+<h3 id="视图">视图</h3>
+<h4 id="singleall模式">Single/All模式</h4>
+<p>将所有节点保存之后, 默认仅显示节点<br />
+用户可以选择显示连接线/不显示连接线(显示连接线可能会很乱)</p>
+<ul>
+<li>当鼠标单击该节点时, 会隐藏所有不相关节点, 并重新排列视图, 进入Single模式<br />
+</li>
+<li>当鼠标右击任意位置, 会返回All模式<br />
+</li>
+<li>当鼠标悬停在某个节点上时, 会单独显示该节点相关的所有连接线</li>
+</ul>
+<p>下图是一个Single模式的视图格式</p>
+<figure>
+<img src="1/single.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>它由五个部分组成:</p>
+<ul>
+<li>前向</li>
+<li>后继</li>
+<li>环路</li>
+<li>节点</li>
+<li>节点信息</li>
+</ul>
+<h3 id="解析">解析</h3>
+<p>示例文本</p>
+<blockquote>
+<p># A Description of A<br />
+[B]description of A to B<br />
+[C]A to C<br />
+[D]A to D<br />
+[E]A to E</p>
+<p># B</p>
+<p># C</p>
+<p># D<br />
+[A]D to A</p>
+<p># E<br />
+[A]E to A<br />
+[A]E also to A</p>
+<p># F<br />
+[A]F to A</p>
+<p># G<br />
+[A]G to A</p>
+<p>F<br />
+G<br />
+E    A    B<br />
+            C<br />
+            D</p>
+</blockquote>
+<p>理想的解析:</p>
+<ul>
+<li><p>All-Mode-Without-Line</p>
+<figure>
+<img src="1/All_Mode_Without_Line.jpg" alt="image" /><figcaption>image</figcaption>
+</figure></li>
+<li><p>All-Mode</p>
+<figure>
+<img src="1/All_Mode.jpg" alt="image" /><figcaption>image</figcaption>
+</figure></li>
+<li><p>Single-Mode(单击节点A)</p>
+<figure>
+<img src="1/Single_Mode.jpg" alt="image" /><figcaption>image</figcaption>
+</figure></li>
+<li><p>Single-Mode-View(暂不支持)</p></li>
+</ul>
+<p>首先解析为json</p>
+<pre><code>[
+    {
+        &quot;name&quot;: &quot;&quot;,
+        &quot;next&quot;: [
+            {
+                &quot;name&quot;: &quot;&quot;,
+                &quot;next&quot;: [
+                    
+                ]
+            },
+            {
+                &quot;name&quot;: &quot;&quot;,
+                &quot;next&quot;: [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        &quot;name&quot;: &quot;A&quot;,
+        &quot;description&quot;: &quot;Description of A&quot;,
+        &quot;next&quot;: [
+            {
+                &quot;name&quot;: &quot;B&quot;,
+                &quot;description&quot;: &quot;description of A to B&quot;
+            },
+            {
+                &quot;name&quot;: &quot;C&quot;,
+                &quot;description&quot;: &quot;A to C&quot;
+            },
+            {
+                &quot;name&quot;: &quot;D&quot;,
+                &quot;description&quot;: &quot;A to D&quot;
+            },
+            {
+                &quot;name&quot;: &quot;E&quot;,
+                &quot;description&quot;: &quot;A to E&quot;
+            }
+        ],
+        &quot;back&quot;: [
+            &quot;D&quot;,
+            &quot;E&quot;,
+            &quot;F&quot;,
+            &quot;G&quot;
+        ]
+    },
+    {
+        &quot;name&quot;: &quot;B&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;next&quot;: [
+            
+        ],
+        &quot;back&quot;: [
+            &quot;A&quot;
+        ]
+    },
+    {
+        &quot;name&quot;: &quot;C&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;next&quot;: [
+            
+        ],
+        &quot;back&quot;: [
+            &quot;A&quot;
+        ]
+    },
+    {
+        &quot;name&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;next&quot;: [
+            {
+                &quot;name&quot;: &quot;A&quot;,
+                &quot;description&quot;: &quot;D to A&quot;
+            }
+        ],
+        &quot;back&quot;: [
+            &quot;A&quot;
+        ]
+    },
+    {
+        &quot;name&quot;: &quot;E&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;next&quot;: [
+            {
+                &quot;name&quot;: &quot;A&quot;,
+                &quot;description&quot;: &quot;E to A&quot;
+            },
+            {
+                &quot;name&quot;: &quot;A&quot;,
+                &quot;description&quot;: &quot;E also to A&quot;
+            }
+        ],
+        &quot;back&quot;: [
+            &quot;A&quot;
+        ]
+    },
+    {
+        &quot;name&quot;: &quot;F&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;next&quot;: [
+            {
+                &quot;name&quot;: &quot;A&quot;,
+                &quot;description&quot;: &quot;F to A&quot;
+            }
+        ]
+    },
+    {
+        &quot;name&quot;: &quot;G&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;next&quot;: [
+            {
+                &quot;name&quot;: &quot;A&quot;,
+                &quot;description&quot;: &quot;G to A&quot;
+            }
+        ]
+    }
+]</code></pre>

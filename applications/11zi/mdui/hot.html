@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>测试</title>
+    </head>
+    <body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-bottom-nav-fixed">
+
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input id="file" type="file" name="file"/>
+        <button id="upload" type="button">upload</button>
+    </form>
+
+    <!-- 必须先引入 mdui.js -->
+    <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
+
+    <!--以下代码必须放在 mdui.js 下面-->
+    <script>
+        var $$ = mdui.JQ;
+        $$("#upload").on('click', function() {
+            $$.ajax({
+                method: 'POST',
+                url: '/upload.php',
+                data: new FormData($$('#uploadForm')[0]),
+                cache: false,//上传文件不需要缓存，所以 false
+                processData: false,//因为data值是FormData对象，不需要对数据做处理。
+                contentType: false,//因为是由<form>表单构造的FormData对象，且已经声明了属性 enctype="multipart/form-data"，所以这里设置为false。
+                timeout: 5000,//请求的超时时间（毫秒）。为 0 时表示永不超时。1000 毫秒 = 1秒，当前值为 5000，所以超时时间为 5 秒
+                success: function (data) {
+                    // 请求成功之后调用。
+                    console.log('请求成功');
+                },
+                error: function (xhr, textStatus) {
+                    // 请求出错时调用。
+                    console.log('请求出错', xhr, textStatus);
+                    // xhr 为 XMLHttpRequest 对象
+                    // textStatus 为包含错误代码的字符串
+                },
+                complete: function (xhr, textStatus) {
+                    // 请求完成时调用。
+                    console.log('请求完成');
+                    // xhr 为 XMLHttpRequest 对象
+                    // textStatus 为一个包含成功或错误代码的字符串
+                }
+            });
+        });
+    </script>
+    </body>
+</html>
