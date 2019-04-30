@@ -1,22 +1,3 @@
----  
-layout: post  
-title:  "unity用户手册中文版-目录-2018.3"  
-author: yaoz(translated)  
----  
-
-**写在前面**
-
-- [https://docs.unity3d.com/Manual/UnityManual.html](https://docs.unity3d.com/Manual/UnityManual.html)  
-  这是2018年3月版本的unity用户手册原文  
-- 你可能还没阅读过组件手册/脚本手册, 建议和[组件手册](http://www.ceeger.com/Components/index.html)一起阅读  
-- 我的翻译水平不好, 排版也是魔鬼级  
-- 毕竟你在看这个的时候更需要中文版的文档...  
-- 刚翻译完目录就看到了unity中文手册, 所以我弃坑了  
-- 但是那个手册很久没更新了, 于是我重新填坑  
-- 次日在gitbook找到了[翻译完毕的中文版](https://www.gitbook.com/book/nuysoft/unity-manual), 所以本文档彻底烂尾(这个文档回头再删)
-
-***
-
 # unity用户手册(2018.3)
 
 使用unity创建2D与3D游戏/应用  
