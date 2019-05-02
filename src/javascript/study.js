@@ -32,7 +32,7 @@
       var append = '<div class="mdui-row mdui-ripple"><label class="mdui-list-item"><div class="mdui-list-item-avatar">'
       append += '<img src="' + comments[i].user.avatar_url + '" /></div>'
       append += '<div class="mdui-list-item-content">' + comments[i].user.login + '</div>'
-      append += '</label><p class="mdui-m-l-2 mdui-m-r-2 mdui-m-t-1 mdui-m-b-1">' + comments[i].body + '</p></div>'
+      append += '</label><pre class="mdui-m-l-2 mdui-m-r-2 mdui-m-t-1 mdui-m-b-1">' + comments[i].body + '</pre></div>'
       commentElement.innerHTML += append
     }
   })
