@@ -15,7 +15,7 @@
     for (var i = 0; i < articles.length - 1; i++) {
       var append = '<div class="mdui-col-xs-11 mdui-typo"><blockquote><article>'
       append += '<small class="mdui-float-right"><i class="mdui-icon material-icons">&#xe8df;</i>' + (articles[i].updated_at).slice(0, 10) + '</small>'
-      append += '<h1>' + articles[i].title + "</h1>"
+      append += '<h1><a href="javascript:void(0);" onclick="getArticle('+(i)+')">' + articles[i].title + "</a></h1>"
       for (var j = articles[i].labels.length - 1; j >= 0; j--) {
         append += '<div class="mdui-chip mdui-m-r-1" style="color:white;background-color:#' + articles[i].labels[j].color + '"><span class="mdui-chip-title">' + articles[i].labels[j].name + '</span></div>'
       }
@@ -37,3 +37,14 @@
     }
   })
 }());// 评论列表
+function getArticle(issueID) {
+  axios.get('https://api.github.com/repos/11zi/11zi.github.io/issues/'+issueID).then(function (response) {
+    console.log("Okay no pb.")
+    var converter = new showdown.Converter()
+    var article = response.data.body
+    var html = converter.makeHtml(article)
+    var div = document.getElementById('articles')
+    div.innerHTML=html
+  })
+}// 读取文章(需要用到graphQL)
+// 筛选标签文章(需要用到graphQL)
