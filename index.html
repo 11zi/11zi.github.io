@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="ch">
-<!--
-                X                 X       XX
-                 XX              X    x    XX
-                  XX           XX    XXX    XXX
-                    XX        X     XX XXX    XX
-                      XX    XX     XX    XX    XX
-                        XXXXX     XX      XX    XX
-                          XX     XX        XX    XXX
-                         XX     XX        XX     XX
-                       XX        XX      XX     XX
-                      XX    XX    XX    XX     XX
-                    XX     XXXX     XX XX     XX
-                   XX    XX    XX    XXX     XX
-                  X     XX       XX        XX
-                XX     XX      XX XXX     XX
-              XXX        XX   XX    XX     XXX
-            XXX            XXX       XXX     XXX
-    
-    Fixed myself.
+  <!--
+    ⠄⢰⣧⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⢸⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣠
+    ⠄⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄
+    ⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄
+    ⢸⣇⠻⣿⣿⣿⣧⣀⢀⣠⡌⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⣿⣿⠄
+    ⢸⣿⣷⣤⣤⣤⣬⣙⣛⢿⣿⣿⣿⣿⣿⣿⡿⣿⣿⡍⠄⠄⢀⣤⣄⠉⠋⣰
+    ⣖⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⢇⣿⣿⡷⠶⠶⢿⣿⣿⠇⢀⣤
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣷⣶⣥⣴⣿⡗
+    ⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄
+    ⣦⣌⣛⣻⣿⣿⣧⠙⠛⠛⡭⠅⠒⠦⠭⣭⡻⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄
+    ⣿⣿⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠹⠈⢋⣽⣿⣿⣿⣿⣵⣾⠃⠄
+    ⣿⣿⣿⣿⣿⣿⣿⣿⠄⣴⣿⣶⣄⠄⣴⣶⠄⢀⣾⣿⣿⣿⣿⣿⣿⠃⠄⠄
+    ⠈⠻⣿⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⠄⣿⣿⡀⣾⣿⣿⣿⣿⣛⠛⠁⠄⠄⠄
+    ⠄⠄⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁⠄⠄⠄⠄⠄
+    ⠄⠄⠄⠄⠄⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁⠄⠄⠄⠄⠄⢀⣠⣴
+    ⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣠
+
+      Fixed myself.
   -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/mdui/css/mdui.min.css">
+    <link rel="icon" href="./579.ico">
+    <title>YaoZ</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="src/mdui/css/mdui.css">
-  <link rel="icon" href="yaoz.ico" type="image/x-icon" />
-  <title>YaoZ</title>
-</head>
-
-<body style="overflow:-Scroll;overflow-x:hidden">
-  <div class="mdui-container-fluid mdui-row-gapless">
-    <div class="mdui-col-xs-9 mdui-color-white" onclick="listArticles()">
-      <div class="mdui-toolbar mdui-tab mdui-tab-centered">
-        <span class="mdui-typo-title">YaoZ</span>
-      </div>
-      <div class="mdui-col-xs-1"></div>
-      <div id="articles" class="mdui-col-xs-11 mdui-shadow-1">
-      </div>
-    </div>
-
-    <div class="mdui-col-xs-3 mdui-color-black mdui-row-gapless mdui-hidden-sm-down">
-      <div class="mdui-col-xs-8 mdui-col-offset-xs-2">
-        <img src="yaoz.png" alt="yaoz" class="mdui-img-fluid mdui-ripple">
-      </div>
-      <div class="mdui-divider-light"></div>
-      <div class="mdui-row mdui-m-b-2">
-        <div id="labels" class="mdui-col-xs-10 mdui-col-offset-xs-1">
+  <body style="overflow:-Scroll;overflow-x:hidden">
+    <!--最大的父组件-->
+    <div class="mdui-container-fluid mdui-row-gapless" id="vue-controller">
+      <div class="mdui-col-xs-9 mdui-color-white" onclick="listArticles()">
+        <div id="vue-controller" class="mdui-toolbar mdui-tab mdui-tab-centered">
+          <span class="mdui-typo-title">{{ name }}</span>
+        </div>
+        <div class="mdui-col-xs-1"></div>
+        <!--文章列表条目,用模板实现-->
+        <article-list></article-list>
+        <div id="articles" class="mdui-col-xs-11 mdui-shadow-1">
         </div>
       </div>
-      <div id="comments">
-      </div>
-      <div class="mdui-textfield mdui-row mdui-theme-layout-dark mdui-color-black">
-        <i class="mdui-icon material-icons mdui-text-color-white-icon mdui-m-l-1"
-          onclick="window.open('https://github.com/11zi/11zi.github.io/issues/1')">&#xe0d8;</i>
-        <input class="mdui-textfield-input" type="text" placeholder="写下你的评论(反正提交不了)" />
+
+      <div class="mdui-col-xs-3 mdui-color-black mdui-row-gapless mdui-hidden-sm-down">
+        <div class="mdui-col-xs-8 mdui-col-offset-xs-2">
+          <img src="yaoz.png" alt="yaoz" class="mdui-img-fluid mdui-ripple">
+        </div>
+        <div class="mdui-divider-light"></div>
+        <div class="mdui-row mdui-m-b-2">
+          <!--标签列表,用模板实现-->
+          <labels></labels>
+          <div id="labels" class="mdui-col-xs-10 mdui-col-offset-xs-1">
+          </div>
+        </div>
+        <!--评论区,用模板实现-->
+        <comment></comment>
+        <div id="comments">
+        </div>
+        <div class="mdui-textfield mdui-row mdui-theme-layout-dark mdui-color-black">
+          <i class="mdui-icon material-icons mdui-text-color-white-icon mdui-m-l-1"
+            onclick="window.open('https://github.com/11zi/11zi.github.io/issues/1')">&#xe0d8;</i>
+          <input class="mdui-textfield-input" type="text" placeholder="写下你的评论(反正提交不了)" />
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="src/mdui/js/mdui.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
-  <script src="src/javascript/study.js"></script>
-</body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./src/mdui/js/mdui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <script src="src/javascript/vue.js"></script>
+    <script src="src/javascript/main_controller.js"></script>
+    <script src="src/javascript/vue_controller.js"></script>
+  </body>
 
 </html>
