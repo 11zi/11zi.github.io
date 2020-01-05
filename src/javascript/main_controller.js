@@ -1,5 +1,7 @@
 console.time(); // 咋瓦鲁多!
 
+var is_article_list = false;
+
 var vue_component = JSON.parse(`{
   "el":"#vue-controller",
   "data":{
@@ -60,8 +62,9 @@ function getVueJson(){
 }());
 
 function listArticles() { // 展示文章列表
-  axios.get('https://api.github.com/repos/11zi/11zi.github.io/issues').then(function (response) {
-    var articles = response.data
+  if(!is_article_list){
+    axios.get('https://api.github.com/repos/11zi/11zi.github.io/issues').then(function (response) {
+      var articles = response.data
     var articleElement = document.getElementById('articles')
     var htmlList = ''
     for (var i = 0; i < articles.length - 1; i++) {
@@ -75,7 +78,8 @@ function listArticles() { // 展示文章列表
       htmlList += append
     }
     articleElement.innerHTML = htmlList
-  })
+    is_article_list=true;
+  })}
 };
 function getArticle(issueID) { // 读取文章
   axios.get('https://api.github.com/repos/11zi/11zi.github.io/issues/' + issueID).then(function (response) {
@@ -86,6 +90,7 @@ function getArticle(issueID) { // 读取文章
     html += '</div>'
     var div = document.getElementById('articles')
     div.innerHTML = html
+    is_article_list=false;
   })
 }
 // 筛选标签文章(需要用到 graphQL V4的api 目前无法完成)
