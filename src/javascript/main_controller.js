@@ -3,7 +3,6 @@ console.time(); // 咋瓦鲁多!
 var vue_component = JSON.parse(`{
   "el":"#vue-controller",
   "data":{
-    "name":"YaoZ",
     "articleList":[{
       "issueId":"怒",
       "articles_title":"怒",
@@ -60,6 +59,7 @@ function getVueJson(){
     }
   })
 }());
+
 function listArticles() { // 展示文章列表
   axios.get('https://api.github.com/repos/11zi/11zi.github.io/issues').then(function (response) {
     var articles = response.data

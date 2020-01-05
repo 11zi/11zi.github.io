@@ -32,11 +32,11 @@
     <!--最大的父组件-->
     <div class="mdui-container-fluid mdui-row-gapless" id="vue-controller">
       <div class="mdui-col-xs-9 mdui-color-white" onclick="listArticles()">
-        <div id="vue-controller" class="mdui-toolbar mdui-tab mdui-tab-centered">
-          <span class="mdui-typo-title">{{ name }}</span>
+        <div class="mdui-toolbar mdui-tab mdui-tab-centered">
+          <span class="mdui-typo-title">YaoZ</span>
         </div>
         <div class="mdui-col-xs-1"></div>
-        <!--文章列表条目,用模板实现-->
+        <!--文章列表条目,已完成-->
         <article-list></article-list>
         <div id="articles" class="mdui-col-xs-11 mdui-shadow-1">
         </div>
@@ -48,12 +48,12 @@
         </div>
         <div class="mdui-divider-light"></div>
         <div class="mdui-row mdui-m-b-2">
-          <!--标签列表,用模板实现-->
+          <!--标签列表,已完成-->
           <labels></labels>
           <div id="labels" class="mdui-col-xs-10 mdui-col-offset-xs-1">
           </div>
         </div>
-        <!--评论区,用模板实现-->
+        <!--评论区,已完成-->
         <comment></comment>
         <div id="comments">
         </div>
@@ -67,8 +67,9 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./src/mdui/js/mdui.min.js"></script>
+    <!--markdown 2 html-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
-    <script src="src/javascript/vue.js"></script>
+    <script src="src/javascript/vue.min.js"></script>
     <script src="src/javascript/main_controller.js"></script>
     <script src="src/javascript/vue_controller.js"></script>
   </body>
