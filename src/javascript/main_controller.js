@@ -33,8 +33,7 @@ function getVueJson(){
     return vue_component
   }()
 } // 用闭包把封装的变量暴露给vue_controller.js
-// 目前没有暴露出去,所以vue无法渲染
-// 原先的实现方式也已删除,因此没有任何东西渲染出来
+// 看起来好像用vue重写了一遍, 其实根本没有(*/ω＼*)
 
 (function () { // 标签列表
   axios.get('https://api.github.com/repos/11zi/11zi.github.io/labels').then(function (response) {
@@ -50,7 +49,7 @@ function getVueJson(){
   axios.get('https://api.github.com/repos/11zi/11zi.github.io/issues/1/comments').then(function (response) {
     var comments = response.data
     var commentElement = document.getElementById('comments')
-    for (var i = comments.length - 1; i >= 0; i--) {
+    for (var i = 0; i <= comments.length - 1; i++) {
       var append = '<div class="mdui-row mdui-ripple"><label class="mdui-list-item"><div class="mdui-list-item-avatar">'
       append += '<img src="' + comments[i].user.avatar_url + '" /></div>'
       append += '<div class="mdui-list-item-content">' + comments[i].user.login + '</div>'
