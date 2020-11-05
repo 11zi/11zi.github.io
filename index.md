@@ -2,5 +2,5 @@
 
 {% for post in site.posts %}
 折腾
-- [{{ post.name }}]({{ post.url }})
+- [{{ post.title }}]({{ post.url }})
 {% endfor %}

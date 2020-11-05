@@ -5,3 +5,7 @@ timezone: Asia/Shanghai
 logo: /assets/yaoz.png
 show_downloads: false
 lang: zh
+plugins:
+  - jekyll-coffeescript
+sass:
+  style
