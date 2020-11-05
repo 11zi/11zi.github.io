@@ -1,5 +1,5 @@
 <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
-
+<style>header{ border-right: 2px solid #267CB9; }</style>
 {% for post in site.posts %}
-- [折腾-{{ post.title }}]({{ post.url }})
+- [{{ post.title }}]({{ post.url }})
 {% endfor %}
