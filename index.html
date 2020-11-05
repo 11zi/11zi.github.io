@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico">
   <title>yao_z blog</title>
 </head>
 <body>
-  {% for post in paginator.posts %} {% endfor %}
-  2020-11-5-post-title.md
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </body>
 </html>
