@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
 title: yao_z
-description: 备忘，总结，展示
+description: 备忘，总结，展示。
 timezone: Asia/Shanghai
-logo: /favicon.ico
+logo: /assets/yaoz.png
 show_downloads: false
+lang: zh

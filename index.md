@@ -1,1 +1,3 @@
-[记-第二次折腾主页]({% post_url 2020-11-5-post-title %})
+{% for post in site.posts %}
+[{{ post.name }}]({{ post.url }})
+{% endfor %}
