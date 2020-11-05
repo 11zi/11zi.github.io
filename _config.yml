@@ -7,5 +7,3 @@ show_downloads: false
 lang: zh
 plugins:
   - jekyll-coffeescript
-sass:
-  style
