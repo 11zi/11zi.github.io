@@ -1,3 +1,6 @@
 theme: jekyll-theme-minimal
-title: yao_z blog
+title: yao_z
 description: 备忘，总结，展示
+timezone: Asia/Shanghai
+logo: /favicon.ico
+show_downloads: false
