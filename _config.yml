@@ -5,6 +5,6 @@ timezone: Asia/Shanghai
 logo: /assets/yaoz.png
 show_downloads: false
 lang: zh
-truncate: 300
+truncate: 20
 kramdown:
   hard_wrap: true
