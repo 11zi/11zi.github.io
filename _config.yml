@@ -8,3 +8,4 @@ lang: zh
 truncate: 20
 kramdown:
   hard_wrap: true
+toc_levels: [2, 3, 4, 5, 6]
