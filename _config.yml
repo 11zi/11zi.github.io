@@ -6,6 +6,4 @@ logo: /assets/yaoz.png
 show_downloads: false
 lang: zh
 truncate: 10
-kramdown:
-  hard_wrap: true
-  toc_levels: [1, 2, 3, 4, 5]
+markdown: redcarpet

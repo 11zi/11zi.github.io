@@ -5,3 +5,8 @@
 - [关于jekyll(About GitHub Pages and Jekyll)](https://docs.github.com/cn/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
 - [_config.yml的配置](https://jekyllrb.com/docs/configuration/)
 - [Hexo + NexT + GitHub Pages 的超深度优化](https://io-oi.me/tech/hexo-next-optimization/)
+
+*jkeyll支持的markdown解析器*
+- kramdown
+- redcarpet
+- rdiscount
