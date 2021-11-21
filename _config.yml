@@ -6,4 +6,4 @@ logo: /assets/yaoz.png
 show_downloads: false
 lang: zh
 truncate: 10
-markdown: redcarpet
+markdown: rdiscount
