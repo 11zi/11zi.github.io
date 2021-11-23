@@ -3,6 +3,6 @@
 ***
 
 # [{{ post.title }}]({{ post.url }})  
-*{{ post.date }}*  
+*{{ post.date | date_to_string }}*  
 {{ post.excerpt }}  
 {% endfor %}  
