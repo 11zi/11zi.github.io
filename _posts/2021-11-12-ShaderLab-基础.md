@@ -1,21 +1,13 @@
 ---
 layout: post
 date: 2021-11-12 16:20:43
-title:  "21年第45周"
+title:  "ShaderLab-基础"
 author: yaoz
-excerpt: 前有歌声，所以接下来，悲伤很有用。
-tag: 周报
+excerpt: 东西很多很杂，还没整理完。
+tag: ShaderLab Code
 ---
 
-# 本周事件
-
-- 制作报价表（没做完）
-- unity项目(F)的功能添加与文档更新
-- shader基础-矩阵运算
-- 色图
-- 打型打型打型练习
-
-# 备忘
+# 数学
 
 ## 向量
 
@@ -41,8 +33,7 @@ a×b
 2.  计算顺序：缩放-旋转zxy-位移  
     `Pnew = Mtranslation * Mrotation * Mscale * Pold`
 
-
-## shader基础
+# shader基础
 
 着色器渲染流程（参考unityshader）  
 1.  模型空间->世界空间  
@@ -105,18 +96,20 @@ Shader "名字/名字/名字"{
   |unity_CameraInvProjection|相机的投影矩阵的逆矩阵|
   |unity_CameraWorldClipPlanes[6]|相机的6个裁剪平面在世界空间下的表示：左右下上近远平面|
 
-## 画
+[各种光照模型：](https://www.cnblogs.com/cxrs/category/446348.html)
 
-- krenz课堂
-    - 锅盖
-    - 鸡蛋
-    - 火腿片
-- 夜幕画师
-    - 忘记线的存在，圈型
-    - 一技破万法的几何图形
-- cloux_vitor
-    - 带层级的整体观察与复制
+1.  Lambert光照模型
+2.  Phong光照模型
+3.  Blinng-Phong光照模型
 
-# 其他
+> **BRDF**（Bidirectional Reflectance Distribution Function，双向反射分布函数）  
+>   
+> **各向同性/各向异性**  
+> 各向同性指物体的物理、化学等方面的性质不会因方向的不同而有所变化的特性，即某一物体在不同的方向所测得的性能数值完全相同，亦称均质性。  
+> 在shader中，各向同性指随着表面法线与入射（观察）方向的变化，反射的结果不变
 
-- 随机构建游戏逻辑的roguelike
+# Blender相关
+
+[材质-原理化BSDF](https://docs.blender.org/manual/zh-hans/dev/render/shader_nodes/shader/principled.html)
+
+[三维文件格式说明](https://www.bgteach.com/article/132)
