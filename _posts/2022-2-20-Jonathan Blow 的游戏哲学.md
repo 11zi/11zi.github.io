@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-2-19 18:09:09
-title:  "何为游戏"
+date: 2022-2-20 18:09:09
+title:  "Jonathan Blow 的游戏哲学"
 author: yaoz
 excerpt: 不久之后，会有那么一个游戏设计，如同闪电般照耀我们的文化。
 tag: 游戏设计
