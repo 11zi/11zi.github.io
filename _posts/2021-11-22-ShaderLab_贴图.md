@@ -3,7 +3,7 @@ layout: post
 date: 2021-11-22 21:54:20
 title:  "Shader Lab-贴图"
 author: yaoz
-excerpt: 荒腔走板的无谓年月
+excerpt: 整理中
 tag: ShaderLab Code
 ---
 

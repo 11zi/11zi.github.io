@@ -5,5 +5,5 @@ timezone: Asia/Shanghai
 logo: /assets/yaoz.png
 show_downloads: false
 lang: zh
-truncate: 10
+truncate: 6
 markdown: rdiscount
