@@ -10,3 +10,5 @@
 - kramdown
 - redcarpet
 - rdiscount
+
+- [文章分页](http://jekyllcn.com/docs/pagination/)
