@@ -1,6 +1,7 @@
 
 <!-- 分页链接 -->
 <div class="pagination">
+  <p>{{ paginator.toString() }}</p>
   {% if paginator.previous_page %}
     <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
   {% else %}
