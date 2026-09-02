@@ -4,6 +4,12 @@ description: 备忘，总结，展示。
 timezone: Asia/Shanghai
 logo: /assets/yaoz.png
 show_downloads: false
-lang: zh
-truncate: 4
-markdown: rdiscount
+lang: zh-CN
+
+# GitHub Pages 默认支持的 Markdown 渲染器。
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# 首页的筛选和分页由 assets/js/blog-index.js 处理。
+posts_per_page: 5

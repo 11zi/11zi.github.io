@@ -4,7 +4,7 @@ date: 2023-4-5 9:46:05
 title:  "blender学习路线"
 author: yaoz
 excerpt: 接触blender好几年了，分享一点学习心得
-tag: Art
+tags: [Art]
 ---
 
 # blender学习路线

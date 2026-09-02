@@ -4,7 +4,7 @@ date: 2021-11-12 16:20:43
 title:  "ShaderLab-基础"
 author: yaoz
 excerpt: 东西很杂，整理中。
-tag: ShaderLab Code
+tags: [ShaderLab, Code]
 ---
 
 # 数学
