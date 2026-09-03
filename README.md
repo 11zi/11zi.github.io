@@ -2,7 +2,7 @@
 
 # yaoz
 
-使用 Jekyll 和 GitHub Pages 的个人博客。首页在构建时读取 `_posts`，再由浏览器端脚本完成按标签筛选和分页。
+使用 Eleventy 和 GitHub Pages 的个人博客。文章、标签页、分页和相邻文章导航都在构建时生成，访客端不需要 JavaScript。
 
 ## 写文章
 
@@ -12,36 +12,40 @@
 ---
 layout: post
 title: 文章标题
-date: 2026-09-02 10:00:00
+date: 2026-09-02T10:00:00+08:00
 author: yaoz
 excerpt: 显示在首页的摘要
 tags: [Code, Art]
 ---
 ```
 
-标签筛选项由 Jekyll 根据所有文章的 `tags` 自动生成，不需要修改 `index.html`。每页文章数在 `_config.yml` 的 `posts_per_page` 中设置。
+左侧标签、数量和标签分页根据所有文章的 `tags` 自动生成，不需要维护独立的标签列表。
 
 ## 本地预览
 
-安装 Ruby 后执行：
+安装 Node.js 18 或更高版本后执行：
 
 ```shell
-bundle install
-bundle exec jekyll serve
+corepack enable
+pnpm install
+pnpm start
 ```
 
-然后打开 `http://localhost:4000`。修改 `_config.yml` 后需要重启 Jekyll。
+然后打开 `http://localhost:8080`。Eleventy 会监听文件变化并自动刷新。生产构建使用 `pnpm build`。
 
 ## 主要结构
 
-- `_config.yml`：站点配置。
-- `_posts/`：Markdown 文章。
-- `index.html`：首页 Liquid/HTML 模板。
-- `assets/js/blog-index.js`：筛选、分页和 URL 状态。
-- `assets/css/style.scss`：主题样式和项目自定义样式。
+- `eleventy.config.js`：站点、文章集合、标签和分页配置。
+- `_posts/`：Markdown 文章，沿用原来的文件结构。
+- `_includes/layouts/`：站点和文章布局。
+- `_includes/components/`：可复用的文章列表模板。
+- `listing-pages.njk`：首页和标签分页入口。
+- `assets/css/style.css`：站点样式。
+- `.github/workflows/deploy-pages.yml`：GitHub Pages 自动构建与发布。
 
 ## 参考
 
-- [Jekyll 文档](https://jekyllrb.com/docs/)
-- [GitHub Pages 与 Jekyll](https://docs.github.com/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
-- [Minimal 主题](https://github.com/pages-themes/minimal)
+- [Eleventy 文档](https://www.11ty.dev/docs/)
+- [Eleventy 集合](https://www.11ty.dev/docs/collections/)
+- [Eleventy 分页](https://www.11ty.dev/docs/pagination/)
+- [GitHub Pages 自定义工作流](https://docs.github.com/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)

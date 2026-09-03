@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% set pageDescription = description or site.description %}
+    <meta name="description" content="{{ pageDescription | escape }}">
+    <meta name="generator" content="Eleventy">
+    <title>{% if title and title != "主页" %}{{ title | escape }} · {% endif %}{{ site.title }}</title>
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <div class="site-identity">
+          <a class="site-title" href="/">{{ site.title }}</a>
+          <a class="site-logo" href="/" aria-label="返回主页">
+            <img src="/assets/yaoz.png" width="180" height="180" alt="">
+          </a>
+          <p class="site-description">{{ site.description }}</p>
+        </div>
+
+        <nav class="tag-nav" aria-label="文章标签">
+          <div class="tag-nav__heading">标签</div>
+          <a class="tag-nav__item{% if not activeTag %} is-active{% endif %}" href="/">
+            <span>全部</span>
+            <span class="tag-nav__count">{{ collections.posts | length }}</span>
+          </a>
+          {% for tag in collections.tagList %}
+            <a
+              class="tag-nav__item{% if activeTag == tag.name %} is-active{% endif %}"
+              href="{{ tag.name | tagUrl }}"
+            >
+              <span>{{ tag.name | escape }}</span>
+              <span class="tag-nav__count">{{ tag.count }}</span>
+            </a>
+          {% endfor %}
+        </nav>
+      </aside>
+
+      <main id="main-content" class="site-main">
+        {{ content | safe }}
+      </main>
+    </div>
+  </body>
+</html>

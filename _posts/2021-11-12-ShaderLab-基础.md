@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2021-11-12 16:20:43
+date: 2021-11-12T16:20:43+08:00
 title:  "ShaderLab-基础"
 author: yaoz
 excerpt: 东西很杂，整理中。

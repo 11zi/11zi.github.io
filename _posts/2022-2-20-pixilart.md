@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-2-22 11:56:02
+date: 2022-02-22T11:56:02+08:00
 title:  "PixilArt-与他人在线画画"
 author: yaoz
 excerpt: 接，画，发！
