@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.listingPages
+  size: 1
+  alias: listing
+permalink: "{{ listing.outputPath }}"
+eleventyComputed:
+  title: "{{ listing.title }}"
+  activeTag: "{{ listing.activeTag }}"
+---
+
+{% include "components/post-list.njk" %}
