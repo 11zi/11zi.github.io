@@ -31,13 +31,13 @@
 
 {% if listing.totalPages > 1 %}
   <nav class="pagination" aria-label="文章分页">
-    {% if listing.previousUrl %}
-      <a class="pagination__edge" href="{{ listing.previousUrl }}">← 上一页</a>
-    {% else %}
-      <span class="pagination__edge is-disabled">← 上一页</span>
-    {% endif %}
-
     <span class="pagination__numbers">
+      {% if listing.previousUrl %}
+        <a class="pagination__edge" href="{{ listing.previousUrl }}" aria-label="上一页">&lt;&lt;</a>
+      {% else %}
+        <span class="pagination__edge is-disabled" aria-hidden="true">&lt;&lt;</span>
+      {% endif %}
+
       {% for item in listing.pages %}
         {% if item.number == listing.pageNumber %}
           <span class="pagination__number is-current" aria-current="page">{{ item.number }}</span>
@@ -45,12 +45,12 @@
           <a class="pagination__number" href="{{ item.url }}">{{ item.number }}</a>
         {% endif %}
       {% endfor %}
-    </span>
 
-    {% if listing.nextUrl %}
-      <a class="pagination__edge" href="{{ listing.nextUrl }}">下一页 →</a>
-    {% else %}
-      <span class="pagination__edge is-disabled">下一页 →</span>
-    {% endif %}
+      {% if listing.nextUrl %}
+        <a class="pagination__edge" href="{{ listing.nextUrl }}" aria-label="下一页">&gt;&gt;</a>
+      {% else %}
+        <span class="pagination__edge is-disabled" aria-hidden="true">&gt;&gt;</span>
+      {% endif %}
+    </span>
   </nav>
 {% endif %}
