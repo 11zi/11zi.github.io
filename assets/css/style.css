@@ -5,9 +5,9 @@
   --text: #263238;
   --muted: #6b7478;
   --border: #dfe7e4;
-  --accent: #26b994;
-  --accent-dark: #11765f;
-  --accent-soft: #e8f8f3;
+  --accent: #277cb9;
+  --accent-dark: #165c8f;
+  --accent-soft: #c9deec;
   --link: #267cb9;
   --content-width: 760px;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -100,8 +100,14 @@ a {
 }
 
 .site-description {
-  margin: 0 0 32px;
+  margin: 0 0 12px;
   color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-github-link {
+  display: inline-block;
+  margin-bottom: 32px;
   font-size: 0.95rem;
 }
 

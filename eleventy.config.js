@@ -3,9 +3,10 @@ const PAGE_SIZE = 5;
 
 const site = {
   title: "yaoz",
-  description: "Article, Gallery, Application, and more.",
   language: "zh-CN",
   author: "yaoz",
+  description: "Article, Gallery, Application, and more.",
+  githubUrl: "https://github.com/11zi",
   pageSize: PAGE_SIZE,
 };
 
