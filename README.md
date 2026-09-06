@@ -1,8 +1,8 @@
 > 其实搭建一个博客是很简单的事情，坚持总结和写作才是最难的事。
 
-# yaoz
+# Hell-World
 
-使用 Eleventy 和 GitHub Pages 的个人博客。文章、标签页、分页和相邻文章导航都在构建时生成，访客端不需要 JavaScript。
+使用 Eleventy 和 GitHub Pages 构建的个人博客。
 
 ## 写文章
 
@@ -26,10 +26,17 @@ tags: [Code, Art]
 安装 Node.js 18 或更高版本后执行：
 
 ```shell
+npx install
+npx pnpm start
+```
+或者：
+```shell
 corepack enable
 pnpm install
 pnpm start
 ```
+
+
 
 然后打开 `http://localhost:8080`。Eleventy 会监听文件变化并自动刷新。生产构建使用 `pnpm build`。
 

@@ -4,7 +4,7 @@ date: 2021-11-22T21:54:20+08:00
 title:  "Shader Lab-贴图"
 author: yaoz
 excerpt: 整理中
-tags: [ShaderLab, Code]
+tags: [着色器, Code]
 ---
 
 #  将贴图引入shader  

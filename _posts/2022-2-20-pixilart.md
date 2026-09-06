@@ -1,10 +1,17 @@
 ---
 layout: post
 date: 2022-02-22T11:56:02+08:00
-title:  "PixilArt-与他人在线画画"
+title:  "在线画画网站"
 author: yaoz
-excerpt: 接，画，发！
-tags: [Art, WebSite]
+excerpt: 连麦画画(26年再编辑)
+tags: [Art, 分享]
 ---
 
-<iframe id="pixilart-widget" src="https://www.pixilart.com/embed/1079088?e=1" width="500px" height="500px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+# [Pixil Art](https://www.pixilart.com/11zi)
+
+像素画一般不需要在线，有Aseprite就够了...总之网站有这么一个功能  
+
+# [Magma](https://magma.com/)
+
+很多人一起摸鱼画图，还能在别人的作品旁边画爱心。  
+套索画笔特好用。  

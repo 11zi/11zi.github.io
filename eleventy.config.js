@@ -3,7 +3,7 @@ const PAGE_SIZE = 5;
 
 const site = {
   title: "yaoz",
-  description: "备忘，总结，展示。",
+  description: "Article, Gallery, Application, and more.",
   language: "zh-CN",
   author: "yaoz",
   pageSize: PAGE_SIZE,
